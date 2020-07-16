@@ -31,7 +31,7 @@
 </template>
 <script>
 import pagination from "./Pagination";
-import preload from "@/assets/js/preload.js"
+// import preload from "@/assets/js/preload.js"
 export default {
   name: "recomList",
   data() {
@@ -86,7 +86,7 @@ export default {
   },
   watch: {
     pageRecomList(val){
-    preload(this.imgUrlList)
+    // preload(this.imgUrlList)
     }
   },
   created() {

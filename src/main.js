@@ -6,7 +6,7 @@ import "./assets/iconfont/iconfont.css"
 import "./assets/css/reset.css"
 import axios from "axios"
 import VueLazyLoad from "vue-lazyload"
-import preload from "./assets/js/preload"
+// import preload from "./assets/js/preload"
 Vue.config.productionTip = false
 Vue.prototype.$axios = axios
 Vue.use(VueLazyLoad,{

@@ -73,13 +73,13 @@ async function HTTPgetPlaylist(payload){
         return commit("setHistorylist",JSON.parse(historylist));
       }
       HTTPgetHistorylist([]).then(res=>{ 
-        console.log(res,122)
+        
         commit("setHistorylist",res)
       })
 }
 export const getSearchlist = ({commit,dispatch},keywords)=>{
   return HTTPgetSearchlist(keywords).then(res=>{ 
-    console.log(res[0],14)
+    
     commit("setSearchlist",res)
   })
 }
@@ -92,11 +92,6 @@ export const getSongUrl = ({commit,dispatch},id)=>{
 }
 export const getSongComments = ({commit,dispatch},id)=>{
   HTTTPgetSongComments(id).then(async res=>{
-    await preload(res.map(item=>{
-      
-      return item.user.avartar
-    }))
-
       commit('setCurrentSongComments',res)
     })
   }
