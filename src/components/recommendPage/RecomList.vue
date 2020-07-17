@@ -8,7 +8,7 @@
           <div class="poster-bottom">
             <i class="iconfont iconerji earphone"></i>
             <span class="play-num">{{item.playCount | num}}</span>
-            <i class="iconfont iconbofang player" @click="playSong(item.id)"></i>
+            <i class="iconfont iconbofang player" ></i>
           </div>
         </div>
         <div class="cate-name">{{item.name}}</div>
@@ -60,14 +60,6 @@ export default {
     jumpPage(val) {
       console.log(val)
       this.pageNow = val;
-    },
-    playSong(id){
-         this.$axios.get(`https://api.imjad.cn/cloudmusic/?type=playlist&id=${id}`).then(res => {
-             console.log(res)
-             this.$axios.get(`https://api.imjad.cn/cloudmusic/?type=song&id=34097025`).then(res => {
-             console.log(res,"111")
-         })
-         })
     }
   },
   computed: {
@@ -84,11 +76,7 @@ export default {
     }
 
   },
-  watch: {
-    pageRecomList(val){
-    // preload(this.imgUrlList)
-    }
-  },
+
   created() {
     this.getRecomList();
   },

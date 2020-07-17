@@ -1,5 +1,4 @@
 import axios from "axios"
-import preload from "../assets/js/preload";
 async function HTTPgetPlaylist(payload){
     await axios.get("/data.json").then(res=>{
       console.log(res)

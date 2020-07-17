@@ -179,7 +179,7 @@ export default{
             }
             .duration{
                 font-size: 13px;
-                // text-align: right;
+                
             }
         }
     }
