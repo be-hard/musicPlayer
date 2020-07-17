@@ -31,7 +31,6 @@
 </template>
 <script>
 import pagination from "./Pagination";
-// import preload from "@/assets/js/preload.js"
 export default {
   name: "recomList",
   data() {
@@ -42,9 +41,6 @@ export default {
       pageSize: 10,
       paginationNum: 5
     };
-  },
-  created(){
-      preload(imgUrlList)
   },
   components: {
     pagination
@@ -60,7 +56,7 @@ export default {
     jumpPage(val) {
       console.log(val)
       this.pageNow = val;
-    }
+    } 
   },
   computed: {
     pageRecomList() {

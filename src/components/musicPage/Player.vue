@@ -10,8 +10,6 @@
 </template>
 <script>
 import { mapMutaions, mapGetters, mapActions, mapMutations } from "vuex";
-
-import preload from '@/assets/js/preload';
 import asideLeft from "./PlayerLeft"
 import asideRight from "./PlayerRight"
 import center from "./PlayerCenter"
@@ -32,16 +30,7 @@ export default {
       this.getSongComments(this.searchlist[0].id);
       this.getSongImg(this.searchlist[0].id);
     })
-    //   // console.log(res,"huahua")
-    //   // this.playSong(this.searchlist[0]);
-    //   this.isClick = this.searchlist[0].id;
-    //   this.getSongUrl(this.searchlist[0].id).then(res => {
-    //     this.SongUrlHandle(this.searchlist[0])
-    //   });
-    //   // this.setPlayState(false)
-    // });
 
-    // this.getSongUrl(191171);
   },
  mounted(){
    this.init()

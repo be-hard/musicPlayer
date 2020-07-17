@@ -16,7 +16,6 @@
 </template>
 <script>
 import { mapGetters } from "vuex";
-import preload from "@/assets/js/preload";
 export default {
   name: "asideRight",
   data() {

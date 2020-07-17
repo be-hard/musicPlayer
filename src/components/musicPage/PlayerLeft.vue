@@ -88,9 +88,7 @@ export default {
       localStorage.setItem("playlist",JSON.stringify(this.playlist))
     },
     playSong(item) {
-      // console.log(item);
-
-      // this.setPlayState(true);
+      
       this.getSongComments(item.id);
       this.getSongImg(item.id);
       this.getSongUrl(item.id).then(res => {

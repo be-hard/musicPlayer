@@ -12,26 +12,15 @@
 </template>
 <script>
 import {mapGetters} from "vuex"
-import preload from '@/assets/js/preload'
 export default{
     name:"center",
     computed:{
         ...mapGetters(["playState", "currentSong","songImg"])
     },
-    created(){
-
-    },
-    watch:{
-        songImg(val){
-            preload([val])
-        }
-    },
     filters:{
     songName(value){
-      console.log(value)
       let index = value.indexOf("(");
       let newValue = value.slice(0,index)
-      console.log(index,newValue,"524")
       return newValue
     }
   }
