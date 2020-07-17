@@ -8,6 +8,7 @@ module.exports = {
     },
     publicPath:"musicPlayer/dist/",
     build:{
-        assetsPublicPath:"./"
+        assetsPublicPath:"./",
+        assetsSubDirectory:"static"
     }
 };
