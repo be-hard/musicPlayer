@@ -6,9 +6,5 @@ module.exports = {
     chainWebpack: config => {
         config.resolve.alias.set("@", resolve("src"));
     },
-    publicPath:"musicPlayer/dist/",
-    build:{
-        assetsPublicPath:"./",
-        assetsSubDirectory:"static"
-    }
+    publicPath: process.env.NODE_ENV === "production" ? "./" : "/"
 };
