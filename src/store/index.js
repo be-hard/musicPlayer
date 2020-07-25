@@ -27,7 +27,7 @@ export default new Vuex.Store({
       refs:null,
       curTime:0,
       duration:0,
-      mvVolume:0
+      mvVolume:1
     }
     
   },

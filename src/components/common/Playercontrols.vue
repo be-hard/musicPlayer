@@ -180,9 +180,6 @@ export default {
       this.currentMode = this.mode[index];
     },
     drag(e) {
-      if (!this.playState) {
-        this.$refs.audio.pause();
-      }
       this.offsetL = this.$refs.playBar.offsetLeft;
 
       e.stopPropagation();

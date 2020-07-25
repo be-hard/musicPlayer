@@ -30,10 +30,10 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 html,body{
-
+	
 	min-width: 800px;
 	height: 100%;
-	overflow-x: hidden;
+	/* overflow-x: hidden; */
 }
 body {
 	line-height: 1;

@@ -73,6 +73,7 @@ export default {
         this.setCurrentIndex(this.playlist.length - 1);
       } else {
         this.setCurrentIndex(index);
+      
       }
     },
     pushSong(item) {
@@ -94,6 +95,7 @@ export default {
       this.getSongUrl(item.id).then(res => {
         this.SongUrlHandle(item);
         this.currentUrl ? this.setPlayState(true) : this.setPlayState(false);
+        
         console.log(this.playlist, "加上");
         console.log(this.currentIndex);
       });

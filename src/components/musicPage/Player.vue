@@ -26,9 +26,9 @@ export default {
     if(search){
       this.setSearchlist(JSON.parse(search))
     }
-    this.getSearchlist("小半").then(res => {
-      this.getSongComments(this.searchlist[0].id);
-      this.getSongImg(this.searchlist[0].id);
+    this.getSearchlist("Shape of you").then(res => {
+      this.getSongComments(this.searchlist[1].id);
+      this.getSongImg(this.searchlist[1].id);
     })
 
   },

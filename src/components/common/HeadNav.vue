@@ -7,7 +7,7 @@
     <router-link to="/" tag="h1" class="logo">悦听</router-link>
     <div class="search">
       <input type="text" placeholder="请输入要搜索的音乐" @keyup.enter="getlistRes" v-model="inputValue"/>
-      <i class="iconfont iconsousuo search-ico"></i>
+      <i class="iconfont iconsousuo search-ico" @click="getlistRes"></i>
     </div>
     <ul class="head-aside-right">
       <li class="login" @click="loginClick">
@@ -44,7 +44,9 @@ export default {
       ...mapMutations(["setSearchlist"]),
       ...mapActions(["getSearchlist"]),
       getlistRes(){
-          this.getSearchlist(this.inputValue)
+          this.getSearchlist(this.inputValue).then(res=>{
+            console.log("get")
+          })
       },
        loginClick(){
     this.$emit("clickLogin")

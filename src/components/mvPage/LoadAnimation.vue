@@ -84,26 +84,27 @@ export default {
     }
 }
 @keyframes jump{
+    // 产生停顿的效果
     0%{
-        transform: translate3d(0,0,0);
+        transform: translate3d(-50%,0,0);
         box-shadow: 0 0px 20px 0 rgba(0,0,0,0.2);
     }
     50%{
-        transform: translate3d(0,0px,0);
+        transform: translate3d(-50%,0,0);
         box-shadow: 0 0px 20px 0 rgba(0,0,0,0.2);
     }
     100%{
-        transform: translate3d(0,-50px,0);
+        transform: translate3d(-50%,-50px,0);
         box-shadow: 0 150px 20px 0 rgba(0,0,0,0.2);
     }   
     
 }
 @keyframes over{
     0%{
-        transform: scale(1) rotate(0);
+        transform: scale(1) rotate(0) translate(-50%,-50%);
     }
     100%{
-        transform: scale(0.01) rotate(360deg);
+        transform: scale(0.01) rotate(360deg) translate(-50%,-50%);
 
     }
 }

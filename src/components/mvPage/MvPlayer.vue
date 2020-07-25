@@ -83,24 +83,31 @@ export default {
     .load{
       position: absolute;
       top: 50%;
-      left: 50%;
-      transform: translate(-50%,-50%);
+      left:50%;
+      width: 110px;
+      height: 100px;
+      // transform: translate3d(-50%,-50%);
       &.over{
         animation: over .8s forwards;
       }
     }
     video {
+      // position: absolute;
       width: 100%;
-    min-width: 750px;
       margin: 0 auto;
-      max-height: 606px;
+      // left: 50%;
+      // bottom: 50%;
+      // transform: translate(-50%,-50%);
+     
+      min-height: 606px;
+      max-width: 1000px;
     }
   }
 
   .mv-controls-container {
     position: relative;
     // bottom: 0px;
-    width: 100%;
+    // width: 100%;
     min-width: 750px;
     height: 55px;
    

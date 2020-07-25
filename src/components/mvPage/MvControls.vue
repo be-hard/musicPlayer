@@ -30,6 +30,7 @@ export default {
       allWidth:0,
       volumeWidth:0,
       timeWidth:0,
+      volumeSchedule:0
 
     };
   },
@@ -258,7 +259,7 @@ console.log(this.mvPlayer.currentTime)
         position: absolute;
         left: 0;
         top: 50%;
-        width: 0px;
+        width: 0;
         height: 4px;
         margin-top: -2px;
         border-radius: 3px;
