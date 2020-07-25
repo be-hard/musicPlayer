@@ -26,7 +26,9 @@ npm run build
 2.底部音乐播放控件组件
 ```
 ![Image text](https://github.com/be-hard/musicPlayer/raw/master/screen/图片2.jpg)
+3.登录组件
 
+![Image text](https://github.com/be-hard/musicPlayer/raw/master/screen/login.jpg)
 ### 主页面
 ```
 1.仿照网易云音乐App的轮播图效果做一个轮播图组件
