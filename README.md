@@ -22,9 +22,9 @@ npm run build
 1.头部导航栏
 ```
 ![Image text](https://github.com/be-hard/musicPlayer/raw/master/screen/图片1.jpg)
-```
+
 2.底部音乐播放控件组件
-```
+
 ![Image text](https://github.com/be-hard/musicPlayer/raw/master/screen/图片2.jpg)
 3.登录组件
 
